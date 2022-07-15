@@ -22,7 +22,6 @@ RUN apk update && apk add --no-cache \
     unzip \
     git \
     curl \
-    # lua-zlib-dev \
     libmemcached-dev \
     nginx \
     vim \
