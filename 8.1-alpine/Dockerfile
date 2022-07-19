@@ -32,8 +32,8 @@ RUN apk update && apk add --no-cache \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Add user for laravel application
-RUN addgroup -g 1000 www
-RUN adduser -u 1000 -s /bin/sh --disabled-password -G www www 
+# RUN addgroup -g 1000 www
+# RUN adduser -u 1000 -s /bin/sh --disabled-password -G www www 
 
 # Copy code to /var/www
 COPY --chown=www:www-data . /var/www/html
